@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Start Game Ranch.unity
+    guid: 047f42000bdd76542b007af93d184cf1
+  - enabled: 1
+    path: Assets/TO THE RANCH.unity
+    guid: 04583b1e12ae8c34ea08ded6bf420a48
+  - enabled: 1
+    path: Assets/Start Game Space.unity
+    guid: 2ff1b5d177298e043acbf4c344098398
+  - enabled: 1
+    path: Assets/TO THE SPACE.unity
+    guid: cf351a6d67533804a966bf9031e0ad4d
+  - enabled: 1
+    path: Assets/Start Game Gunoi.unity
+    guid: 4896d9f86848f1844bc6121180441276
+  - enabled: 1
+    path: Assets/TO THE GUNOI.unity
+    guid: b61ac49b74d79fe488dc949f3e192b64
+  m_configObjects: {}
