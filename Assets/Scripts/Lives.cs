@@ -28,7 +28,8 @@ public class Lives : MonoBehaviour
             if (ded == 0)
             {
                 ded = 1;
-                Score.score += Credits.creds;
+                PlayerPrefs.SetInt("Credits", PlayerPrefs.GetInt("Credits") + Score.score);
+                //Score.score += Credits.creds;
                 Debug.Log(Credits.creds);
                 Time.timeScale = 0f;
             }

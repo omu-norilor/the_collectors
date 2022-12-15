@@ -227,7 +227,7 @@ Transform:
   m_LocalScale: {x: 1.7450744, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &70067403
 GameObject:
@@ -264,9 +264,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -188.9}
+  m_AnchoredPosition: {x: -5.16, y: -173}
   m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999958, y: 0.49999988}
 --- !u!114 &70067405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,65 +358,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70067403}
   m_CullTransparentMesh: 0
---- !u!1 &281874830
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 281874831}
-  - component: {fileID: 281874832}
-  m_Layer: 0
-  m_Name: DropSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &281874831
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281874830}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 502.9, y: 629.5, z: -1364.7998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281874832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281874830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 583b67d25dc217f4ca66b738f5adbd4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xLimitRight: 153
-  xLimitLeft: 853
-  xPositions:
-  - 153
-  - 253
-  - 353
-  - 453
-  - 553
-  - 653
-  - 753
-  - 853
-  dropPrefab:
-  - {fileID: 7873790233126819929, guid: 6100313f406f48e4f8e2f7719170c244, type: 3}
-  wave:
-    delayTime: 1.75
-    spawnAmount: 1
 --- !u!1 &366026228
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d0e1bc8b2a15f4b8067359d943feb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drop:
+    damage: 0
+  obiect: {fileID: 0}
 --- !u!60 &366026231
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -600,7 +544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920154937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5470085, y: -84.72222, z: 0}
+  m_LocalPosition: {x: -17.452995, y: -84.72222, z: 0}
   m_LocalScale: {x: 0.85470086, y: 0.85470086, z: 0.85470086}
   m_Children: []
   m_Father: {fileID: 1344624765}
@@ -691,9 +635,9 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.5, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 177, y: 84.66925}
+    oldSize: {x: 177, y: 86.1693}
     newSize: {x: 177, y: 84.66925}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -737,6 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d1a8108c2113a448bd11a08bb0d084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: 
 --- !u!50 &920154943
 Rigidbody2D:
   serializedVersion: 4
@@ -864,7 +809,7 @@ Transform:
   m_LocalScale: {x: 1.3141477, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344624761
 GameObject:
@@ -1115,7 +1060,7 @@ PrefabInstance:
     - target: {fileID: 6739987581677419115, guid: b060c9991efdf02439057e4a8d90b841,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 6739987581677419115, guid: b060c9991efdf02439057e4a8d90b841,
         type: 3}

@@ -9,7 +9,7 @@ public class Credits : MonoBehaviour
     public  Text credsText;
     void Start()
     {
-        creds = Score.score;
+        creds = PlayerPrefs.GetInt("Credits", 0);
         credsText.GetComponent<Text>();
     }
 

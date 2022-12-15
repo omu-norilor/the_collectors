@@ -14,6 +14,6 @@ public class CatchMoney : MonoBehaviour
             Destroy(punga.gameObject);
         if (punga.gameObject.name.Contains(identifier))
             Score.score += 10;
-    else Score.score += 1;
+        else Score.score += 1;
     }
 }

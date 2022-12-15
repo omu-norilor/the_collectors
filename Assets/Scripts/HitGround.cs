@@ -15,6 +15,7 @@ public class HitGround : MonoBehaviour
         {
             Lives.lives -= drop.damage;
             Destroy(obiect.gameObject);
+            
         }
 
     }

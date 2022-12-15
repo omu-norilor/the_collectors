@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
     {
         scoreText.text =":" + score.ToString();
         if (score / 10 > scoreOld / 10)
-            Time.timeScale += 0.05f;
+            Time.timeScale += 0.10f;
         scoreOld = score;
 
             

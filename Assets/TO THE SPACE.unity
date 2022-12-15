@@ -152,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 25.03, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -264,7 +264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -188.9}
+  m_AnchoredPosition: {x: -5, y: -173}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70067405
@@ -461,11 +461,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281874830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 502.9, y: 629.5, z: -1364.7998}
+  m_LocalPosition: {x: 502.9, y: 1054.81, z: -1364.7998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &281874833
 MonoBehaviour:
@@ -479,17 +479,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382d0b9f7011d06439ada246cf254514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xLimitRight: 153
-  xLimitLeft: 853
+  xLimitRight: 7
+  xLimitLeft: 0
   xPositions:
   - 153
-  - 253
   - 353
-  - 453
   - 553
-  - 653
   - 753
-  - 853
+  - 953
+  - 1153
+  - 1253
+  - 1353
   dropPrefab:
   - {fileID: 7873790233126819929, guid: 6100313f406f48e4f8e2f7719170c244, type: 3}
   - {fileID: 512785760857843781, guid: d37f4caa2909c214e82d18318fb5b21e, type: 3}
@@ -890,7 +890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920154937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5470085, y: -84.72222, z: 0}
+  m_LocalPosition: {x: -18.780088, y: -84.72222, z: 0}
   m_LocalScale: {x: 0.85470086, y: 0.85470086, z: 0.85470086}
   m_Children: []
   m_Father: {fileID: 1344624765}
@@ -1124,7 +1124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995297905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -107.77293, y: -190, z: 0}
+  m_LocalPosition: {x: -135.1, y: -174.10002, z: 0}
   m_LocalScale: {x: 13.100437, y: 13.100437, z: 0.8733625}
   m_Children:
   - {fileID: 1859945306}
@@ -1163,7 +1163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 575.55, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1277,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 27.947632, y: 13.100464}
+  m_AnchoredPosition: {x: 0.62054443, y: 29.000446}
   m_SizeDelta: {x: -542.41614, y: -331.39917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099246084
@@ -1499,7 +1499,7 @@ RectTransform:
   - {fileID: 995297907}
   - {fileID: 1945487272}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1710,7 +1710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424080314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 152.75111, y: -190, z: 0}
+  m_LocalPosition: {x: 125.42403, y: -174.10002, z: 0}
   m_LocalScale: {x: 13.100437, y: 13.100437, z: 0.8733625}
   m_Children:
   - {fileID: 677197687}
@@ -1861,6 +1861,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLevel: Main Menu
+  unlocked_name: 
+  locked: 0
+  price: 0
+  to_change: {fileID: 0}
 --- !u!1 &1791136948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,7 +2235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 27.947632, y: 13.100464}
+  m_AnchoredPosition: {x: 0.62054443, y: 29.000446}
   m_SizeDelta: {x: -542.41614, y: -331.39917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945487273
@@ -2499,6 +2503,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLevel: Main Menu
+  unlocked_name: 
+  locked: 0
+  price: 0
+  to_change: {fileID: 0}
 --- !u!1 &4475229206447344783
 GameObject:
   m_ObjectHideFlags: 0
